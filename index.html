@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>| Psychic-Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam:400,700" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="assets/images/Psychic-Game.JPG" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <header id="mainHeader">
+        <h1>The Phishic Game</h1>
+    </header>
+    <form>
+        <section class="container">
+            <!-- <div class="row">
+                <div class="col-md-12">
+                    <header>
+                        <h1>The Phishic Game</h1>
+                    </header>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-md-12">
+                    <header>
+                        <h2>Guess what letter I'm thinking of:</h2>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div id="winss" class="col-md-12 alert alert-success" role="alert" hidden>
+                    You win!!!!!!!!!!
+                </div>
+            </div>
+            <div class="row">
+                <div id="losess" class="col-md-12 alert alert-danger" role="alert" hidden>
+                    Game Over
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <label>Wins:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="win" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <label>Loses:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="lose" readonly>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-md-2">
+                    <label>Guesses left:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="guessLeft" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <label>Guesses so far:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="guessSoFar" readonly>
+                </div>
+            </div>   
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="reset" type="button">Reset</button>
+                </div>
+            </div>        
+        </section>
+    </form>
+    <!-- Sticky footer -->
+    <footer class="footer">
+        <div class="space"></div>
+        <div class="container">
+            <p>Copyright ©</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
