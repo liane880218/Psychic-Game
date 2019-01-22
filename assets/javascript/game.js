@@ -42,7 +42,9 @@ window.onload = function() {
     document.getElementById("reset").onclick = function(){
         document.getElementById("losess").hidden = true;
         document.getElementById("winss").hidden = true; 
-        restartVariables(); restartValues(); chooseLeter();
+        restartVariables(); 
+        restartValues(); 
+        chooseLeter();
     };
 
     document.onkeyup = function(event) {  
@@ -53,7 +55,6 @@ window.onload = function() {
             if(keyPressed === guessLetter || keyPressed === guessLetter.toUpperCase()) {//User wins
                 wins += 1;
                 guessesSoFar = []; 
-                losses = 0;
                 guessesLeft = 9;
                 document.getElementById("losess").hidden = true;
                 document.getElementById("winss").hidden = false;
@@ -63,12 +64,14 @@ window.onload = function() {
                 if(!guessesSoFar.includes(keyPressed)){//User fail but still doesn't lose
                     guessesLeft -= 1
                     guessesSoFar.push(keyPressed);
-                    losses += 1;
+                    
                     restartValues();
                     if(guessesLeft === 0){//User loses
                         document.getElementById("winss").hidden = true;
                         document.getElementById("losess").hidden = false;
-                        restartVariables();
+                        guessesLeft = 9;
+                        guessesSoFar = []; 
+                        losses += 1;
                         restartValues();
                         chooseLeter();
                     }
